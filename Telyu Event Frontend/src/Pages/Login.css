@@ -1,6 +1,6 @@
 :root{
     --normal-red-background : #ED1E28;
-    overflow: hidden;
+    overflow: scroll;
 }
 .loginBg{
     height: 100vh;
@@ -17,6 +17,7 @@
     transform: translate(-50%, -50%);
     left: 30vw;
     top: 50vh;  
+    z-index: 1;
 }
 .logo img{
     width: 25.55vw;

@@ -3,7 +3,7 @@ import loginbgimg from '../assets/LoginBg.png'
 import logoTevent from '../assets/TeventLogo.png'
 import mataCoret from '../assets/EyeSlashFill.png'
 import React, { useState } from 'react'
-const Login = () =>{
+const Login = ({ setLoggedin }) =>{
     // state untuk password keliatan apa kga
     const [passVisible, setPassVisible] = useState(false);
     const togglePassVis =()=>{
@@ -24,7 +24,7 @@ const Login = () =>{
 
     // masuk login pak eko
     const handleMasukButton =() =>{
-
+        setLoggedin(true)
     }
 
     return(
