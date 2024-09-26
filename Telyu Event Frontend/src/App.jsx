@@ -3,6 +3,7 @@ import Login from './Pages/Login'
 import Dashboard from './Pages/Dashboard.jsx';
 import React, { useState } from 'react'
 import Navbar from './Layout/Navbar';
+import Footer from './Layout/Footer.jsx'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import useWindowDimensions from './Hooks/useWindowDimensions.jsx'
 
@@ -15,17 +16,22 @@ function App() {
 
   document.title = 'Telyu Event'
   return(
-    <Router>
-      {location.pathname !== '/login' && <Navbar/>}
-      <Switch>
-        <Route exact path='/'>
-          <Dashboard/>
-        </Route>
-        <Route path='/login'>
-          <Login/>
-        </Route>
-      </Switch>
-    </Router>
+    <div className='appcontainer'>
+      <Router>
+        <div className="content"> 
+        {location.pathname !== '/login' && <Navbar/>}
+        <Switch>
+          <Route exact path='/'>
+            <Dashboard/>
+          </Route>
+          <Route path='/login'>
+            <Login/>
+          </Route>
+        </Switch>
+        </div>
+        {location.pathname !== '/login' && <Footer/>}
+      </Router>
+    </div>
   )
 }
 

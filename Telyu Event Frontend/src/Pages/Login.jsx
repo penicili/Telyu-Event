@@ -3,7 +3,14 @@ import loginbgimg from '../assets/LoginBg.png'
 import logoTevent from '../assets/TeventLogo.png'
 import mataCoret from '../assets/EyeSlashFill.png'
 import React, { useState } from 'react'
-const Login = ({ setLoggedin }) =>{
+import { useHistory } from 'react-router-dom'
+
+
+
+const Login = () =>{
+
+    // 
+    const history = useHistory()
     // state untuk password keliatan apa kga
     const [passVisible, setPassVisible] = useState(false);
     const togglePassVis =()=>{
@@ -24,7 +31,7 @@ const Login = ({ setLoggedin }) =>{
 
     // masuk login pak eko
     const handleMasukButton =() =>{
-        setLoggedin(true)
+        history.push('/')
     }
 
     return(

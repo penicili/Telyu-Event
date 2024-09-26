@@ -16,7 +16,7 @@ return(
             placeholder='Cari eventmu disini' />
             <img src={searchicon} alt="cari" />
         </div>
-        <ul class="navchoice">
+        <ul className="navchoice">
             <li><a href="kalender">Kalender</a></li>
             <li><a href="tentang-kami">Tentang Kami</a></li>
             <li><a href="kontak-kami">Kontak Kami</a></li>
