@@ -35,6 +35,9 @@ function App() {
           <Route path='/kalender'>
             <Kalender/>
           </Route>
+          <Route path='event1'>
+
+          </Route>
         </Switch>
         </div>
         {location.pathname !== '/login' && <Footer/>}
