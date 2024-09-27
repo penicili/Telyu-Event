@@ -4,6 +4,17 @@
     background-color:#F2F2F2;
     height: 100vh;
 }
+.landobg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.apaini{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .logos{
     display: flex;
     flex-direction: row;
@@ -44,4 +55,19 @@
     align-items: center;
     width: 100%;
     /* padding-right: 286px; */
+}
+.butong{
+    height: 62px;
+    width: 300;
+    max-width: 100%;
+    align-self: center;
+    border-radius: 10px;
+    border: 0px;
+    background-color: var(--normal-red-background);
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 19px;
+    padding-right: 19px;
 }
