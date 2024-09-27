@@ -3,6 +3,7 @@ import Login from './Pages/Login'
 import Dashboard from './Pages/Dashboard.jsx';
 import Kalender from './Pages/Kalender.jsx';
 import Landing from './Pages/Landing.jsx';
+import Event1 from './Pages/Event1.jsx';
 import React, { useState } from 'react'
 import Navbar from './Layout/Navbar';
 import Footer from './Layout/Footer.jsx'
@@ -35,8 +36,8 @@ function App() {
           <Route path='/kalender'>
             <Kalender/>
           </Route>
-          <Route path='event1'>
-
+          <Route path='/event1'>
+            <Event1/>
           </Route>
         </Switch>
         </div>
