@@ -13,8 +13,35 @@
     padding-right: 99px;
     padding-top: 21px;
     padding-bottom: 21px;
+    margin-bottom: 70px;
 }
 .logox{
     width: 95px;
     height: 95px;
+}
+.aboutus{
+    background-color: white;
+    display: flex;
+    padding-left: 72px;
+    padding-top:210px;
+    padding-bottom: 210px;
+    gap:113px
+}
+.faq{
+    display: flex;
+    padding-left: 286px;
+    background-color: #F2F2F2;
+    padding-bottom: 380px;
+}
+.faqleft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.faqyu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding-right: 286px; */
 }

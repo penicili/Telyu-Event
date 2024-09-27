@@ -28,3 +28,10 @@
     padding-right: 20px;
 
 }
+.eventbanner{
+    overflow: hidden;
+}
+.eventimg{
+    width: 100%;
+    overflow: hidden;
+}
