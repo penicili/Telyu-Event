@@ -31,7 +31,7 @@ const Login = () =>{
 
     // masuk login pak eko
     const handleMasukButton =() =>{
-        history.push('/')
+        history.push('/dashboard')
     }
 
     return(

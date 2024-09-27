@@ -1,0 +1,10 @@
+.dashcontent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    overflow-y: auto;
+}
+
+.internal{
+    margin-bottom: 10px;
+}

@@ -19,13 +19,13 @@ function App() {
     <div className='appcontainer'>
       <Router>
         <div className="content"> 
-        {location.pathname !== '/login' && <Navbar/>}
+        {location.pathname !== '/' && <Navbar/>}
         <Switch>
           <Route exact path='/'>
-            <Dashboard/>
-          </Route>
-          <Route path='/login'>
             <Login/>
+          </Route>
+          <Route path='/dashboard'>
+            <Dashboard/>
           </Route>
         </Switch>
         </div>
