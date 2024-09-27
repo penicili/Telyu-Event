@@ -5,12 +5,24 @@ import calvector from '../assets/calvector.png'
 import clock from '../assets/clock.png'
 import location from '../assets/location 1.png'
 import silogo from '../assets/silogo.png'
-
+import Popupcomponent from '../Layout/Popupcomponent'
 const Event1 =()=>{
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpen = () => {
+      setIsOpen(!isOpen);
+    };
+
+
     const [buttonState, setbuttonState] = useState(0)
     const handlebutPress = ()=>{
         setbuttonState(buttonState+1)
+        if(buttonState >= 2){
+            handleOpen()
+        }
     }
+
+
 
     const [inputname, setinputname] = useState('')
     const [inputnim, setinputnim] = useState('')
@@ -84,8 +96,11 @@ const Event1 =()=>{
             </div>;
         }
         };
+
+
     return(
         <div className="event1">
+            <Popupcomponent isOpen={isOpen}/>
             <div className="top" >
                 <div className="left" style={{overflow:'hidden', borderRadius:'35px'}}>
                     <img src={eventimg} alt="" className="banner" />

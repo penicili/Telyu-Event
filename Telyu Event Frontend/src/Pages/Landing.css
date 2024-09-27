@@ -71,3 +71,25 @@
     padding-left: 19px;
     padding-right: 19px;
 }
+.dropdown-reveal {
+    background-color: #FFFFFF; /* set background to white */
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-reveal .header {
+    border-bottom: 1px solid #CCCCCC; /* add border under the title */
+    padding-top: 20px; /* add 20px top padding to the text header */
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  
+  .dropdown-reveal .header:hover {
+    cursor: pointer; /* change cursor to pointer on hover */
+  }
+  
+  .dropdown-reveal .text-container {
+    padding: 16px; /* add some padding to the revealed text */
+  }

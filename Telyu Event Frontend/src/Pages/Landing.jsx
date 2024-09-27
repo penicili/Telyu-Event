@@ -12,7 +12,9 @@ import questionpict from '../assets/questionpict.png'
 import medsos from '../assets/medsos.png'
 import accordion from '../assets/Accordions.png'
 import { useHistory } from 'react-router-dom'
-
+import { useState } from 'react'
+import caretup from '../assets/caretup.png'
+import DropdownReveal from '../Components/Dropdownreveal'
 
 const Landing =()=>{
 // const apiUrl = 'https://483d-36-65-250-80.ngrok-free.app/';
@@ -30,6 +32,13 @@ const Landing =()=>{
 //     console.log(data)
 // }
 // getItems()
+
+const[select, setSelect]= useState('Bulanan')
+const options =[
+   {value: 'Bulanan', label:'Bulanan'},
+   {value:'Mingguan', label:'Mingguan'}
+]
+
 
 const history = useHistory()
 const handelButton =()=>{
@@ -74,7 +83,17 @@ const handelButton =()=>{
                 <div className="faqleft">
                     <p style={{fontSize:'39px',fontWeight:'650'}}>Frequently asked questions</p>
                     <p style={{fontSize:'16px'}}>Gak usah bingung, semua jawabannya ada di sini! Mulai dari cara daftar, info acara, hingga tips <br /> biar gak ketinggalan event seru. Klik-klik aja, cari yang kamu butuh, atau tanya langsung kalau <br /> masih ada yang ngganjel. Yuk, kita bantu biar petualanganmu makin seru!</p>
-                    <img src={accordion} alt="" />
+                    {/* <img src={accordion} alt="" /> */}
+                        <DropdownReveal
+                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        />
+                        <DropdownReveal
+                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        />
+                        <DropdownReveal
+                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        />
+                        
                 </div>
                 <div className="faqyu">
                     <img src={questionpict} alt="" />
