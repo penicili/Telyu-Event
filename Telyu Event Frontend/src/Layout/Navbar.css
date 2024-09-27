@@ -46,6 +46,13 @@
     padding-left: 90px;
     list-style-type: none;
     align-items: center;
+    font-family: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+    font-size: 22px;
+    font-weight:300;
+    white-space: nowrap;
 }
 .navchoice a{
     font-family: inherit;
@@ -56,6 +63,7 @@
     font-weight:300;
     white-space: nowrap;
 }
+
 .notificon{
     size: 20px;
     padding-top: 30px;

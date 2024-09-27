@@ -1,6 +1,8 @@
 import './App.css'
 import Login from './Pages/Login'
 import Dashboard from './Pages/Dashboard.jsx';
+import Kalender from './Pages/Kalender.jsx';
+import Landing from './Pages/Landing.jsx';
 import React, { useState } from 'react'
 import Navbar from './Layout/Navbar';
 import Footer from './Layout/Footer.jsx'
@@ -19,13 +21,19 @@ function App() {
     <div className='appcontainer'>
       <Router>
         <div className="content"> 
-        {location.pathname !== '/' && <Navbar/>}
+        {location.pathname !== '/login' && <Navbar/>}
         <Switch>
           <Route exact path='/'>
+            <Landing/>
+          </Route>
+          <Route path='/login'>
             <Login/>
           </Route>
           <Route path='/dashboard'>
             <Dashboard/>
+          </Route>
+          <Route path='/kalender'>
+            <Kalender/>
           </Route>
         </Switch>
         </div>

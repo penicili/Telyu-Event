@@ -1,0 +1,144 @@
+.kalender{
+    display: flex;
+    flex-direction: row;
+    background-color:#F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100vw;
+    height: 100%;
+    flex-grow: 1;
+}
+.harini{
+    background-color: white;
+    max-width: 20vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 30px;
+    margin-top: 114px;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+.kegiatan{
+    margin-bottom: 20px;
+}
+.tanggal {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #737373;
+    padding-bottom: 25px;
+}
+.ngapain {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-size: 16px;
+    padding-bottom: 23px;
+  }
+  .ngapain li{
+    display: flex;
+    align-items: center;
+    
+  }
+  .ngapain a {
+    text-decoration: none; 
+    color: inherit; 
+    padding-left: 10px;
+  }
+  .group{
+    margin-left: auto;
+  }
+  .bulanni{
+    margin-top: 82px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding-right: 41px;
+  }
+  .bulantahun{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pesan{
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+  .titik{
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding-right: 41px;
+  }
+.apalah{
+    margin-left: auto;
+    font-family: poppins;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* kalender
+s */
+.kalenders {
+    margin-right: 41px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 90px;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .day {
+    width: 14.28%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .calendar-body {
+    padding-top: 10px;
+    height: 100%;
+  }
+  
+  .week {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    height: calc(100%/5);
+}
+
+.date {
+    border-left: 1px solid #ddd;
+    width: 14.28%;
+    text-align: left;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .day:first-child {
+    color: red;
+  }
+  
+  .week .date:first-child {
+    color: red;
+  }
