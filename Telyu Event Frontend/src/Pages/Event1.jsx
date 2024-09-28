@@ -20,6 +20,11 @@ const Event1 =()=>{
         if(buttonState >= 2){
             handleOpen()
         }
+        setinputs([...inputs, {
+            name: inputname,
+            nim: inputnim,
+            kelas: inputkelas
+          }])
     }
 
 
@@ -28,6 +33,7 @@ const Event1 =()=>{
     const [inputnim, setinputnim] = useState('')
     const [inputkelas, setinputkelas] = useState('')
 
+    const [inputs, setinputs] =useState([])
 
     const handleinputname =()=>{
         setinputname(event.target.value)

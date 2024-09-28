@@ -54,6 +54,22 @@
     font-weight:300;
     white-space: nowrap;
 }
+.navchoice-no-searchbar{
+    display: flex;
+    gap: 39px;
+    padding-right: 42px;
+    padding-left: 90px;
+    list-style-type: none;
+    align-items: center;
+    font-family: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+    font-size: 22px;
+    font-weight:300;
+    white-space: nowrap;
+    margin-left: 799px;
+}
 .navchoice a{
     font-family: inherit;
     text-decoration: none;
@@ -73,4 +89,13 @@
 .profpic{
     padding: 19px 42px 19px 0px;
     align-items: center;
+}
+.logbutton button{
+    font-style: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10.5px 21.5px 10.5px 21.5px ;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
 }
