@@ -36,8 +36,19 @@
     padding-left: 72px;
     padding-top:210px;
     padding-bottom: 210px;
-    gap:113px
+    gap:113px;
+    animation: easeInFromLeft 3s;
 }
+@keyframes easeInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 .faq{
     display: flex;
     padding-left: 286px;

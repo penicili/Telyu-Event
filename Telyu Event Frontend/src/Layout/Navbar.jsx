@@ -10,6 +10,9 @@ const Navbar =() =>{
 const handleLogoclick=()=>{
     window.location.href="/dashboard"
 }
+const handleMasukclick =()=>{
+    window.location.href="/login"
+}
 return(
     <div className='navbar'>
         <div className='navbarlogo'>
@@ -32,7 +35,7 @@ return(
 
         <div className='profpic'>          
             {location.pathname === '/' ? (
-                <div className='logbutton'>
+                <div className='logbutton' onClick={handleMasukclick}>
                     <button>
                         Masuk
                     </button>
