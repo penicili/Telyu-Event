@@ -85,13 +85,13 @@ const handelButton =()=>{
                     <p style={{fontSize:'16px'}}>Gak usah bingung, semua jawabannya ada di sini! Mulai dari cara daftar, info acara, hingga tips <br /> biar gak ketinggalan event seru. Klik-klik aja, cari yang kamu butuh, atau tanya langsung kalau <br /> masih ada yang ngganjel. Yuk, kita bantu biar petualanganmu makin seru!</p>
                     {/* <img src={accordion} alt="" /> */}
                         <DropdownReveal
-                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info event kampus dalam satu tempat, guys! Dari seminar keren samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan momen apa pun!'
                         />
                         <DropdownReveal
-                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        header='Gimana sih cara daftar event di Tel-U Event? Ribet gak?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info event kampus dalam satu tempat, guys! Dari seminar keren samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan momen apa pun!'
                         />
                         <DropdownReveal
-                        header='Apa sih Tel-U Event itu?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info <br />event kampus dalam satu tempat, guys! Dari seminar keren <br />samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin <br />pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan <br />momen apa pun!'
+                        header='Kalo mau bikin event sendirir, bisa gak sih di Tel-U Event?' desc='Tel-U Event tuh aplikasi super yang ngumpulin semua info event kampus dalam satu tempat, guys! Dari seminar keren samape festival musik, semuanya ada. Plus, kamu bisa daftar event dan dapet reminder. Intinya, Tel-U Event bikin pengalaman kuliah kamu jadi lebih seru dan gak ketinggalan momen apa pun!'
                         />
                         
                 </div>
