@@ -1,0 +1,10 @@
+yang perlu dikerjain:
+/login:
+    nge post email sama password
+    response nya  token
+/dashboard:
+    nge fetch all events
+/navbar:
+    nge fetch event by name
+/eventx:
+    register event langsung post azza

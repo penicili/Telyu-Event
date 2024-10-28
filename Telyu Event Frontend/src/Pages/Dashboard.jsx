@@ -1,56 +1,46 @@
-import { useState } from "react"
-import EventBox from "../Components/EventBox"
-import './Dashboard.css'
-import { useEffect } from "react";
-import axios from "axios";
-const Dashboard =()=>{
-    // api keys
-    const getEvents = ''
+import { useState, useEffect } from "react";
+import EventBox from "../Components/EventBox";
+import './Dashboard.css';
+import axios from 'axios';
 
-
-
-    // array event
+const Dashboard = () => {
+    // State untuk menyimpan events
     const [events, setEvents] = useState([]);
-    fetch
 
+    // Fungsi untuk mengambil events dari API
+    const fetchEvents = async () => {
+        try {
+            const token = localStorage.getItem('token'); // Ambil token dari local storage
+            const response = await axios.get('http://localhost:5000/event', {
+                headers: {
+                    Authorization: `Bearer ${token}` // Kirim token di header
+                }
+            });
+            setEvents(response.data); // Simpan data events ke state
+        } catch (error) {
+            console.error('Error fetching events:', error);
+        }
+    };
 
-//  login
-// const apiUrl = 'https://483d-36-65-250-80.ngrok-free.app/';
-// const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImlhdCI6MTcyNzQxMTU5MywiZXhwIjoxNzI3NDk3OTkzfQ.Afkki42-9_QoJY-v4P5HvQZ65wNkMZMlTsS4hifTAhw'
-// const getItems = async () => {
-//     const response = await fetch(`${apiUrl}`,{
-//         mode: 'cors',
-//         method: 'GET',
-//         headers: {
-//             "ngrok-skip-browser-warning": "true",
-//             "Authorization": `Bearer ${token}`
-//         },
-//     })
-//     const data = await response.json()
-//     console.log(data)
-// }
-// getItems()
+    // Panggil fetchEvents saat komponen di-mount
+    useEffect(() => {
+        fetchEvents();
+    }, []);
 
-
-
-
-
-
-    return(
+    return (
         <div className="dashcontent">
-                <p>Rekomendasi Event</p>
+            <p>Rekomendasi Event</p>
             <div className="rekomendasi">
-                <EventBox/>
-            </div>
-                <p>Event Eksternal Kampus</p>
-            <div className="eksternal">
-                <EventBox/>
-            </div>
-                <p>Event Internal Kampus</p>
-            <div className="internal">
-                <EventBox/>
+                {events.length > 0 ? (
+                    events.map(event => (
+                        <EventBox key={event.id} event={event} />
+                    ))
+                ) : (
+                    <p>Tidak ada event yang tersedia.</p>
+                )}
             </div>
         </div>
-    )
-}
-export default Dashboard
+    );
+};
+
+export default Dashboard;
