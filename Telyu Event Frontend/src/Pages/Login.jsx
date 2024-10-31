@@ -20,6 +20,8 @@ const Login = () =>{
                 "ngrok-skip-browser-warning": "true",
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
+                'Ngrok-Version': '2',
+                credentials:'include',
             },
             body: JSON.stringify(credentials),
           });

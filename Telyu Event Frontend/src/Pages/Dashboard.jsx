@@ -11,9 +11,13 @@ const Dashboard = () => {
     const fetchEvents = async () => {
         try {
             const token = localStorage.getItem('token'); // Ambil token dari local storage
-            const response = await axios.get('http://localhost:5000/event', {
+            const url = `${import.meta.env.VITE_API_KEY}/event`;
+            const response = await axios.get(url, {
                 headers: {
-                    Authorization: `Bearer ${token}` // Kirim token di header
+                    Authorization: `Bearer ${token}` ,
+                    'Content-Type': 'application/json',
+                    'ngrok-skip-browser-warning': true,
+                    'Ngrok-Version': '2'
                 }
             });
             setEvents(response.data); // Simpan data events ke state
@@ -22,7 +26,7 @@ const Dashboard = () => {
         }
     };
 
-    // Panggil fetchEvents saat komponen di-mount
+
     useEffect(() => {
         fetchEvents();
     }, []);
